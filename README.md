@@ -64,6 +64,12 @@ Run the CLI tool with the path to a folder containing videos:
 videotime "/path/to/video/folder"
 ```
 
+If you’re already inside the folder containing the videos, you can simply run:
+
+```sh
+videotime .
+```
+
 Or, if using the `npm run` method:
 
 ```sh
