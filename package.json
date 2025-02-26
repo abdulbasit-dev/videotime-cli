@@ -7,10 +7,15 @@
         "videotime": "node index.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "keywords": [],
+    "keywords": [
+        "cli",
+        "video",
+        "duration",
+        "ffmpeg"
+    ],
     "author": "abdulbasit-dev",
     "license": "MIT",
-    "description": "",
+    "description": "A CLI tool to calculate the total duration of video files in a folder.",
     "dependencies": {
         "@ffmpeg-installer/ffmpeg": "^1.1.0",
         "@ffprobe-installer/ffprobe": "^2.1.2",

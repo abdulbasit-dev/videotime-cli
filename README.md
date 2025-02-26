@@ -91,6 +91,10 @@ This project uses the following dependencies:
 - [@ffprobe-installer/ffprobe](https://www.npmjs.com/package/@ffprobe-installer/ffprobe): Bundled FFprobe binaries.
 - [Chalk](https://www.npmjs.com/package/chalk): For styled console output.
 
+## 🤝 Contributing
+
+We welcome contributions! Please read the [Contributing Guidelines](CONTRIBUTING.md) to get started.
+
 ## 📝 License
 
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
