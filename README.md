@@ -38,11 +38,12 @@ videotime "/path/to/video/folder"
 
 ```
 📂 Found 3 video(s). Calculating total duration...
-✔ Processed: "video1.mp4" → 120.50 seconds
-✔ Processed: "video2.mkv" → 300.75 seconds
-✔ Processed: "video3.avi" → 180.00 seconds
 
-⏳ Total Duration: 10m 1s
+✔ Processed: "video1.mp4" → 2:30 minutes
+✔ Processed: "video2.mp4" → 5:45 minutes
+✔ Processed: "video3.mp4" → 1:15 minutes
+
+⏳ Total Duration: 0h 9m 30s
 ```
 
 ## 🛠️ Dependencies
