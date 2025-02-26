@@ -4,11 +4,12 @@
     "main": "index.js",
     "type": "module",
     "scripts": {
+        "videotime": "node index.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
-    "author": "",
-    "license": "ISC",
+    "author": "abdulbasit-dev",
+    "license": "MIT",
     "description": "",
     "dependencies": {
         "@ffmpeg-installer/ffmpeg": "^1.1.0",

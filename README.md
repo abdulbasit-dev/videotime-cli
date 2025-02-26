@@ -1,30 +1,60 @@
+Here’s the full updated **README.md** file with the optional global installation and `npm run` script method included:
+
+---
+
 # 📼 VideoTime CLI
 
 **VideoTime CLI** is a simple command-line tool that calculates the total duration of all video files in a given folder. It supports
-multiple video formats and does not require FFmpeg to be installed system-wide.
+multiple video formats and comes bundled with **FFmpeg** and **FFprobe**, so you don't need to install them system-wide.
 
 ## 🚀 Features
 
-- Automatically detects and calculates the duration of all videos in a folder
-- Supports common video formats: `.mp4`, `.mkv`, `.avi`, `.mov`, `.flv`, `.wmv`
-- No system dependencies—bundled with **FFmpeg and FFprobe**
-- User-friendly console output with **Chalk** for styling
+- 🎥 **Automatic Video Detection**: Detects and calculates the duration of all videos in a folder.
+- 📂 **Supports Common Formats**: Works with `.mp4`, `.mkv`, `.avi`, `.mov`, `.flv`, and `.wmv`.
+- ⚙️ **No System Dependencies**: Bundled with **FFmpeg** and **FFprobe** for hassle-free usage.
+- 🎨 **User-Friendly Output**: Uses **Chalk** for styled and readable console output.
 
 ## 📌 Installation
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/videotime-cli.git
+   git clone https://github.com/abdulbasit-dev/videotime-cli.git
    cd videotime-cli
    ```
 2. Install dependencies:
    ```sh
    npm install
    ```
-3. Make the CLI globally accessible:
-   ```sh
-   npm link
-   ```
+
+### Option 1: Run Directly (No Global Installation)
+
+You can run the CLI tool directly using `npm run` without installing it globally. Add the following script to your `package.json`:
+
+```json
+"scripts": {
+  "videotime": "node index.js"
+}
+```
+
+Then, run the tool with:
+
+```sh
+npm run videotime -- "/path/to/video/folder"
+```
+
+### Option 2: Install Globally (Optional)
+
+If you prefer to make the CLI globally accessible, run:
+
+```sh
+npm link
+```
+
+After linking, you can use the `videotime` command from anywhere:
+
+```sh
+videotime "/path/to/video/folder"
+```
 
 ## 🔥 Usage
 
@@ -34,7 +64,13 @@ Run the CLI tool with the path to a folder containing videos:
 videotime "/path/to/video/folder"
 ```
 
-📌 **Example Output**
+Or, if using the `npm run` method:
+
+```sh
+npm run videotime -- "/path/to/video/folder"
+```
+
+### 📌 Example Output
 
 ```
 📂 Found 3 video(s). Calculating total duration...
@@ -48,17 +84,17 @@ videotime "/path/to/video/folder"
 
 ## 🛠️ Dependencies
 
-This project uses:
+This project uses the following dependencies:
 
-- [Fluent-FFmpeg](https://www.npmjs.com/package/fluent-ffmpeg) for processing video metadata
-- [@ffmpeg-installer/ffmpeg](https://www.npmjs.com/package/@ffmpeg-installer/ffmpeg) for bundled FFmpeg
-- [@ffprobe-installer/ffprobe](https://www.npmjs.com/package/@ffprobe-installer/ffprobe) for bundled FFprobe
-- [Chalk](https://www.npmjs.com/package/chalk) for styling console output
+- [Fluent-FFmpeg](https://www.npmjs.com/package/fluent-ffmpeg): For processing video metadata.
+- [@ffmpeg-installer/ffmpeg](https://www.npmjs.com/package/@ffmpeg-installer/ffmpeg): Bundled FFmpeg binaries.
+- [@ffprobe-installer/ffprobe](https://www.npmjs.com/package/@ffprobe-installer/ffprobe): Bundled FFprobe binaries.
+- [Chalk](https://www.npmjs.com/package/chalk): For styled console output.
 
 ## 📝 License
 
-This project is licensed under the **MIT License**.
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
 
 ---
 
-Made with ❤️ by **Abdulbasit Salah**.
+Made with ❤️ by **[Abdulbasit Salah](https://github.com/abdulbasit-dev)**.
