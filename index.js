@@ -31,6 +31,13 @@ const getVideoDuration = filePath => {
   });
 };
 
+// Convert seconds to MM:SS format
+const formatDuration = seconds => {
+  const minutes = Math.floor(seconds / 60);
+  const remainingSeconds = Math.floor(seconds % 60);
+  return `${minutes}:${remainingSeconds.toString().padStart(2, '0')} minutes`;
+};
+
 // Calculate total duration of all videos in a folder
 const calculateTotalDuration = async folderPath => {
   if (!fs.existsSync(folderPath)) {
@@ -53,7 +60,7 @@ const calculateTotalDuration = async folderPath => {
   for (const file of videoFiles) {
     const filePath = path.join(folderPath, file);
     const duration = await getVideoDuration(filePath);
-    console.log(chalk.green(`✔ Processed: "${file}" → ${duration.toFixed(2)} seconds`));
+    console.log(chalk.green(`✔ Processed: "${file}" → ${formatDuration(duration)}`));
     totalDuration += duration;
   }
 
