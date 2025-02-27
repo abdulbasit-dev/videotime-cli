@@ -1,7 +1,3 @@
-Here’s the full updated **README.md** file with the optional global installation and `npm run` script method included:
-
----
-
 # 📼 VideoTime CLI
 
 **VideoTime CLI** is a simple command-line tool that calculates the total duration of all video files in a given folder. It supports
