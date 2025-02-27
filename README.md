@@ -12,17 +12,48 @@ multiple video formats and comes bundled with **FFmpeg** and **FFprobe**, so you
 
 ## 📌 Installation
 
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/abdulbasit-dev/videotime-cli.git
-   cd videotime-cli
-   ```
-2. Install dependencies:
-   ```sh
-   npm install
-   ```
+### Install Globally (Recommended)
 
-### Option 1: Run Directly (No Global Installation)
+To install VideoTime CLI globally, run:
+
+```sh
+npm install -g videotime-cli
+```
+
+Then, run:
+
+```sh
+videotime "/path/to/video/folder"
+```
+
+### Clone the Repository (Alternative)
+
+If you prefer to clone the repository and install manually:
+
+```sh
+git clone https://github.com/abdulbasit-dev/videotime-cli.git
+cd videotime-cli
+```
+
+Then, install dependencies:
+
+```sh
+npm install
+```
+
+Alternatively, you can link the package globally if you've cloned the repository:
+
+```sh
+npm link
+```
+
+After linking, you can use the `videotime` command from anywhere:
+
+```sh
+videotime "/path/to/video/folder"
+```
+
+### Run Without Global Installation
 
 You can run the CLI tool directly using `npm run` without installing it globally. Add the following script to your `package.json`:
 
@@ -36,20 +67,6 @@ Then, run the tool with:
 
 ```sh
 npm run videotime -- "/path/to/video/folder"
-```
-
-### Option 2: Install Globally (Optional)
-
-If you prefer to make the CLI globally accessible, run:
-
-```sh
-npm link
-```
-
-After linking, you can use the `videotime` command from anywhere:
-
-```sh
-videotime "/path/to/video/folder"
 ```
 
 ## 🔥 Usage
