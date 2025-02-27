@@ -26,5 +26,6 @@
     },
     "bin": {
         "videotime": "index.js"
-    }
+    },
+    "preferGlobal": true
 }
